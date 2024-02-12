@@ -1,0 +1,24 @@
+<h1>Mini Calculadora</h1>
+
+<form>
+    <div class="margenes"> 
+        <div>Numero 1: <input type="number" name="numero1" [(ngModel)]="numero1"/></div>
+        <div>Numero 2:<input type="number" name="numero2" [(ngModel)]="numero2"/></div>
+        <br>
+        <div class="row">
+            <div class=""><input class="btn btn-primary" type="button" name="restar" value="restar" (click)="restar()"/></div>
+        
+            <div><input  class="btn btn-primary" type="button" name="sumar" value="sumar" (click)="sumar()"/></div>
+        </div>
+    </div>
+</form>
+
+
+
+
+<div> 
+    <div *ngIf="registrado==true"> 
+        <div>Resultado: {{resultado}}</div>
+    </div>
+    <br>
+</div>
